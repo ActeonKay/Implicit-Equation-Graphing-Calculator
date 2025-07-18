@@ -1,27 +1,35 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!--<title>Implicit Equation Graphing Calculator</title>-->
-    <!--<style>
-      .iframe-wrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 aspect ratio */
-        height: 0;
-        overflow: hidden;
-      }
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Centered Iframe</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f4f4f4; /* Optional background */
+    }
 
-      .iframe-wrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-      }
-    </style>-->
-  </head>
-  <body>
-    <div class="iframe-wrapper" style="text-align: center;">
-      <iframe src="Implicit Equation Graphing Calculator.html" width="960" height="720" allowtransparency="true" frameborder="0" scrolling="no" allowfullscreen></iframe>
-    </div>
-  </body>
+    .iframe-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .iframe-wrapper iframe {
+      width: 90vw;
+      height: 80vh;
+      max-width: 1200px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="iframe-wrapper">
+    <iframe src="Implicit Equation Graphing Calculator.html" allowtransparency="true" allowfullscreen></iframe>
+  </div>
+</body>
 </html>
