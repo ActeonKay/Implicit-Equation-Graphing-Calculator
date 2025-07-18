@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Centered Iframe</title>
   <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;  /* ✅ this disables scroll inside the iframe */
+      height: 100%;
+    }
     .iframe-wrapper {
       display: flex;
       justify-content: center;
@@ -36,7 +42,7 @@
 <body>
   <div class="iframe-wrapper">
     <div class="iframe-container">
-      <iframe src="Implicit Equation Graphing Calculator.html" allowtransparency="true" allowfullscreen></iframe>
+      <iframe src="Implicit Equation Graphing Calculator.html" allowtransparency="true" allowfullscreen scrolling="no"></iframe>
     </div>
   </div>
 </body>
